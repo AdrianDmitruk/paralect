@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: "/paralect",
-  // images: { unoptimized: false, domains: ["https://image.tmdb.org/t/p/w500/"] },
+  images: { unoptimized: true, domains: ["https://image.tmdb.org/t/p/w500/"] },
 
   async rewrites() {
     return [

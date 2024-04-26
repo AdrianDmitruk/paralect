@@ -7,7 +7,7 @@ export default function Test() {
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
-    fetch("/paralect/api/test")
+    fetch("/api/test")
       .then((response) => response.json())
       .then((response) => setData(response))
       .catch((err) => console.error(err));
@@ -20,9 +20,12 @@ export default function Test() {
       {data?.results?.map((item: any) => (
         <div key={item.id}>
           <p>{item.title}</p>
-          <img
+          <Image
             src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
             alt="asdsad"
+            width={500}
+            height={750}
+            priority
           />
         </div>
       ))}
