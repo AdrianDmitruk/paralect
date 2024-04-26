@@ -13,7 +13,7 @@ export default function Test() {
       .catch((err) => console.error(err));
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
