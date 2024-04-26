@@ -7,7 +7,7 @@ export default function Test() {
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
-    fetch("/api/test")
+    fetch("/paralect/api/test")
       .then((response) => response.json())
       .then((response) => setData(response))
       .catch((err) => console.error(err));
