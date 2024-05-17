@@ -13,10 +13,13 @@
     "@mantine/hooks": "^7.8.1",
     "@mantine/modals": "^7.8.1",
     "@tabler/icons-react": "^3.2.0",
+    "axios": "^1.6.8",
     "lucide-react": "^0.376.0",
     "next": "14.2.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-player": "^2.16.0",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",

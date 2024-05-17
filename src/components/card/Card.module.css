@@ -1,0 +1,15 @@
+.title {
+  color: var(--mantine-color-violet-5);
+}
+
+.text {
+  color: var(--mantine-color-gray-6);
+}
+
+.genres::after {
+  content: ',';
+}
+
+.genres:last-child::after {
+  content: '';
+}

@@ -1,5 +1,6 @@
 :root {
   --mantine-font-family: 'Inter', sans-serif;
+  --mantine-font-family-headings: inherit;
 
   --mantine-color-white: #ffffff;
 
@@ -17,7 +18,7 @@
   --mantine-color-violet-3: #d1b4f8;
   --mantine-color-violet-4: #bd93f7;
   --mantine-color-violet-5: #9854f6;
-  --mantine-color-violet-6: #541f9d;
+  /* --mantine-color-violet-6: #541f9d; */
 
   --mantine-spacing-lg: calc(1.5rem * var(--mantine-scale));
 }
@@ -45,4 +46,86 @@ a {
 .mantine-Button-root span {
   height: auto;
   display: flex;
+}
+
+.mantine-Select-dropdown,
+.mantine-MultiSelect-dropdown {
+  border-radius: rem(8px);
+  font-family: var(--mantine-font-family);
+}
+
+.mantine-Select-option,
+.mantine-MultiSelect-option {
+  padding: rem(8px);
+  font-size: rem(14px);
+}
+
+.mantine-Select-option:hover,
+.mantine-MultiSelect-option:hover {
+  border-radius: rem(8px);
+  background: var(--mantine-color-violet-2);
+}
+
+.mantine-Select-option[data-checked='true'],
+.mantine-MultiSelect-option[data-checked='true'] {
+  border-radius: rem(8px);
+  background: var(--mantine-color-violet-5);
+  color: var(--mantine-color-white);
+}
+
+.mantine-Select-label,
+.mantine-MultiSelect-label,
+.mantine-NumberInput-label {
+  margin-bottom: rem(8px);
+  font-size: rem(16px);
+  font-weight: 700;
+  line-height: rem(22.4px);
+}
+
+.mantine-MultiSelect-pill {
+  font-size: rem(14px);
+  background-color: inherit;
+  padding-inline: 0;
+}
+
+.mantine-MultiSelect-pill::after {
+  content: ',';
+}
+
+.mantine-MultiSelect-pill:not(:last-child):nth-last-child(2)::after {
+  content: '';
+}
+
+.mantine-Pill-remove {
+  display: none;
+}
+
+.mantine-MultiSelect-pillsList {
+  align-items: normal;
+}
+
+.mantine-NumberInput-section {
+  right: 7px;
+}
+
+.mantine-NumberInput-controls {
+  height: auto;
+}
+
+.mantine-NumberInput-control {
+  --control-border: 0;
+  color: var(--mantine-color-gray-5);
+}
+
+.mantine-Breadcrumbs-separator {
+  color: var(--mantine-color-black-0);
+}
+
+.mantine-Breadcrumbs-breadcrumb {
+  font-size: rem(14px);
+  color: var(--mantine-color-violet-5);
+}
+
+.mantine-Breadcrumbs-breadcrumb:hover {
+  text-decoration: none;
 }

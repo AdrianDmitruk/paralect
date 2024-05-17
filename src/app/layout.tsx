@@ -19,11 +19,20 @@ const inter = Inter({
 })
 
 const theme = createTheme({
+  primaryColor: 'violet',
   components: {
     Button: {
       defaultProps: {
         color: 'violet.5',
         radius: rem(8)
+      }
+    },
+
+    TextInput: {
+      defaultProps: {
+        style: {
+          height: '48px'
+        }
       }
     }
   }
@@ -48,7 +57,6 @@ export default function RootLayout({
         <MantineProvider theme={theme} defaultColorScheme='light'>
           <Container
             size={rem(1456)}
-            h='100%'
             pl={0}
             style={{
               display: 'flex'

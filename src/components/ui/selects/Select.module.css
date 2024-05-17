@@ -1,0 +1,7 @@
+.iconDown {
+  transform: rotate(180deg);
+}
+
+.iconUp {
+  transform: rotate(0deg);
+}

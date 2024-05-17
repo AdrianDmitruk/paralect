@@ -1,10 +1,10 @@
-import { MainPage } from './MainPage'
+import { MoviePage } from './MoviePage'
 import classes from './page.module.css'
 
-export default function Home() {
+export default function Movie() {
   return (
     <main className={classes.main}>
-      <MainPage />
+      <MoviePage />
     </main>
   )
 }
